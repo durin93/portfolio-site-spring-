@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.durin93.mapper.LoginMapper">
+
+	<resultMap type="com.durin93.domain.LoginInfo" id="LoginInfoResult">
+		<result column="user_id" property="user_id" />
+		<result column="user_pw" property="user_pw" />
+	</resultMap>
+
+	<!-- 로그인 체크  -->
+	<select id="loginCheck" resultType="integer" parameterType="com.durin93.domain.LoginInfo">
+		select count(*) from tbl_member
+		where user_id = #{user_id} and user_pw = #{user_pw}
+	</select>
+
+	<select id="totalAccount" resultType="integer">
+		select count(*) from tbl_member
+	</select>
+
+</mapper>

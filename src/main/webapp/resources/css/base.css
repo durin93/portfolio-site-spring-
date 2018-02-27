@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+* {
+	font: Dotum; /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+}
+
+.header {
+	width: 100%;
+	height: 40px;
+	z-index: 10;
+	top: 0px;
+	position: fixed;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+	box-sizing: border-box;
+	transition: All 0.2s ease;
+	-webkit-transition: All 0.2s ease;
+	-moz-transition: All 0.2s ease;
+	-o-transition: All 0.2s ease;
+}
+/*  헤더 높이와 같게  */
+.bd1_s_b {
+	border: 1px solid black;
+}
+
+.bd2_s_b {
+	border: 2px solid black;
+}
+
+.w1800 {
+	width: 1800px;
+}
+
+.w350 {
+	width: 350px;
+}
+
+.w300 {
+	width: 300px;
+}
+
+.w250 {
+	width: 250px;
+}
+
+.w200 {
+	width: 200px;
+}
+
+.w100per {
+	width: 100%;
+}
+
+.w70per {
+	width: 70%;
+}
+
+.w60per {
+	width: 60%;
+}
+
+.w50per {
+	width: 50%;
+}
+
+.w44per {
+	width: 44%;
+}
+
+.w65per {
+	width: 65%;
+}
+
+.h200 {
+	height: 200px;
+}
+
+.h180 {
+	height: 180px;
+}
+
+.h100 {
+	height: 100px;
+}
+
+.h80 {
+	height: 80px;
+}
+
+.h60 {
+	height: 60px;
+}
+
+.h40 {
+	height: 40px;
+}
+
+.h30 {
+	height: 30px;
+}
+
+.h700 {
+	height: 700px;
+}
+
+.h750 {
+	height: 750px;
+}
+
+.h800 {
+	height: 800px;
+}
+
+.h30per {
+	height: 30%;
+}
+
+.h50per {
+	height: 50%;
+}
+
+.h80per {
+	height: 80%;
+}
+
+.h100per {
+	height: 100%;
+}
+
+.txtal_center {
+	text-align: center;
+}
+
+.fs20pt {
+	font-size: 20pt;
+}
+
+.fs25pt {
+	font-size: 25pt;
+}
+
+.fs35pt {
+	font-size: 35pt;
+}
+
+.pt60 {
+	padding-top: 60px;
+}
+
+.pb60 {
+	padding-bottom: 60px;
+}
+
+.pl20 {
+	padding-left: 20px;
+}
+
+.lh90 {
+	line-height: 90px;
+}
+
+.lh80 {
+	line-height: 80px;
+}
+
+.mgauto {
+	margin: auto;
+}
+
+.mg30auto {
+	margin: 30px auto;
+}
+
+.mg10auto {
+	margin: 10px auto;
+}
+
+.mg3perauto {
+	margin: 3% auto;
+}
+
+.mt100 {
+	margin-top: 100px;
+}
+
+.mt50 {
+	margin-top: 50px;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt1per {
+	margin-top: 1%;
+}
+
+.mt3per {
+	margin-top: 3%;
+}
+
+.mt4per {
+	margin-top: 4%;
+}
+
+.mt5per {
+	margin-top: 5%;
+}
+
+.mt16per {
+	margin-top: 16%;
+}
+
+.mt11per {
+	margin-top: 11%;
+}
+
+.mt50per {
+	margin-top: 50%;
+}
+
+.mt20per {
+	margin-top: 20%;
+}
+
+.mt35per {
+	margin-top: 35%;
+}
+
+.ml100 {
+	margin-left: 100px;
+}
+
+.ml65 {
+	margin-left: 65px;
+}
+
+.ml30 {
+	margin-left: 30px;
+}
+
+.mlm75 {
+	margin-left: -75px;
+}
+
+.ml13per {
+	margin-left: 13%;
+}
+
+.ml8per {
+	margin-left: 8%;
+}
+
+.ml7per {
+	margin-left: 7%;
+}
+
+.ml3per {
+	margin-left: 3%;
+}
+
+.mr30 {
+	margin-right: 30px;
+}
+
+.mr3per {
+	margin-right: 3%;
+}
+
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.dp_b {
+	display: block;
+}
+
+.dp_ib {
+	display: inline-block;
+}
+
+.dp_n{
+	display: none;
+}
+
+.pd_all1per {
+	padding: 1% 1% 1% 1%;
+}
+
+.mouse_cursor_pointer {
+	cursor: pointer;
+}
+
+.txt_deco_none {
+	text-decoration: none
+}
+
+.header_menu ul li {
+	display: inline; /*  세로나열을 가로나열로 변경 */
+	border-left: 1px solid #999; /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
+	font: bold 12px Dotum; /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+	padding: 0 10px; /* 각 메뉴 간격 */
+}
+
+.header_menu ul li:first-child {
+	border-left: none;
+}
+
+.master>a {
+	/* 	display: inline;  세로나열을 가로나열로 변경 */
+	/* 	border-left: 1px solid #999; */
+	/* 	padding: 0 10px; 각 메뉴 간격 */
+	font: bold 12px Dotum; /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+}
+
+/* DivTable.com */
+.divTable {
+	display: table;
+	width: 100%;
+}
+
+.divTableRow {
+	display: table-row;
+}
+
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.divTableCell {
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.divTableCaption {
+	display: table-caption;
+}
+
+.ftbold {
+	font-weight: bold;
+}
+
+.login_text {
+	width: 220px;
+	height: 40px;
+	margin: 10px 15px auto 15px;
+}
+
+.textbox {
+	position: relative;
+}
+
+.textbox label {
+	position: absolute;
+	top: 10px; /* input 요소의 border-top 설정값 만큼 */
+	left: 10px; /* input 요소의 border-left 설정값 만큼 */
+	padding: .8em .5em; /* input 요소의 padding 값 만큼 */
+	color: #999;
+	cursor: text;
+}
+
+.textbox input[type="text"], .drop_login input[type="password"] {
+	width: 88%; /* 원하는 너비 설정 */
+	height: auto; /* 높이값 초기화 */
+	line-height: normal; /* line-height 초기화 */
+	padding: .8em 0; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+	font-family: inherit; /* 폰트 상속 */
+	border: 1px solid #999;
+	border-radius: 0; /* iSO 둥근모서리 제거 */
+	outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
+	-webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* input box */
+.box-body>div>input[type="text"] {
+	width: 100%;
+	height: 5%;
+	border: 2px solid black;
+	margin: 5px 0 10px 0;
+	text-indent: 5px;
+}
+
+.box-body>div>.content {
+	height: 15%;
+}
+
+.input_header {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.input_button {
+	width: 100px;
+	height: 40px;
+	text-decoration: none;
+}
+
+/* paging */
+.paging ul {
+	list-style: none;
+}
+
+.paging ul li {
+	display: inline-block;
+}
+
+
+
+/* 댓글쪽 */
+.modReply{
+	width:300px;
+	heiht:100px;
+	background-color : gray;
+	
+}
